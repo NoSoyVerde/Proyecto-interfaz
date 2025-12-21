@@ -47,7 +47,7 @@ body {
     background: transparent;
 }
 
-.top-bar, .mobile-menu { display: none; }
+.top-bar { display: none; }
 
 .main-nav { padding: 20px 0; }
 
@@ -138,7 +138,7 @@ body {
     padding: 35px 0;
 }
 
-.features-content { display: flex; justify-content: space-between; }
+.features-content { display: flex; justify-content: space-between; list-style: none; }
 
 .feature-item {
     display: flex;
@@ -212,12 +212,10 @@ body {
 .product-name { font-size: 14px; color: var(--white); margin-bottom: 10px; }
 
 .product-rating {
-    display: flex;
-    justify-content: center;
-    gap: 3px;
+    color: var(--primary);
+    font-size: 12px;
+    letter-spacing: 2px;
     margin-bottom: 10px;
-
-    & i { color: var(--primary); font-size: 12px; }
 }
 
 .product-price { font-size: 16px; font-weight: 600; color: var(--white); }
@@ -242,20 +240,18 @@ body {
     & img { width: 100%; height: 100%; object-fit: cover; }
 }
 
-.browse-overlay {
+.browse-title {
     position: absolute;
     inset: 0;
     background: var(--overlay);
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.browse-title {
     color: var(--white);
     font-size: 16px;
     font-weight: 600;
     text-transform: uppercase;
+    margin: 0;
 }
 
 /* ========================================
@@ -414,13 +410,13 @@ body {
     align-items: flex-start;
 
     & img { width: 70px; height: 85px; object-fit: cover; flex-shrink: 0; }
-    & h3 { font-size: 13px; color: var(--white); margin-bottom: 6px; font-weight: 400; line-height: 1.4; }
 }
 
 .product-item .product-info {
     display: flex;
     flex-direction: column;
 
+    & strong { font-size: 13px; color: var(--white); margin-bottom: 6px; font-weight: 400; line-height: 1.4; }
     & .stars { color: var(--primary); font-size: 11px; margin-bottom: 6px; letter-spacing: 2px; }
     & .price { color: var(--white); font-size: 15px; font-weight: 600; }
     & .price-old { color: var(--gray-dark); font-size: 14px; text-decoration: line-through; margin-right: 10px; }
@@ -457,6 +453,7 @@ body {
 .social-icons {
     display: flex;
     gap: 12px;
+    list-style: none;
 
     & i {
         width: 35px;
@@ -479,8 +476,9 @@ body {
     border-bottom: 1px solid var(--border);
 
     &:last-child { border-bottom: none; margin-bottom: 0; }
-    & h3 { font-size: 13px; color: var(--white); margin-bottom: 5px; }
-    & p { font-size: 11px; color: var(--gray-dark); margin: 0; }
+    & p { display: flex; flex-direction: column; margin: 0; }
+    & strong { font-size: 13px; color: var(--white); margin-bottom: 5px; }
+    & span { font-size: 11px; color: var(--gray-dark); }
 }
 
 .news-number {
@@ -497,7 +495,7 @@ body {
     flex-shrink: 0;
 }
 
-.tag-cloud { display: flex; flex-wrap: wrap; gap: 8px; }
+.tag-cloud { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; }
 
 .tag {
     background: var(--dark-ter);
@@ -556,6 +554,7 @@ body {
     display: flex;
     gap: 20px;
     align-items: center;
+    margin: 0;
 
     & span {
         font-size: 13px;

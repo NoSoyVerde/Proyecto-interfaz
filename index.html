@@ -7,39 +7,19 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <!-- Header -->
     <header class="header">
-      <!-- Top Bar -->
-      <div class="top-bar">
-        <div class="container">
-          <div class="top-left">
-            <span>Free shipping on orders over $50</span>
-          </div>
-          <div class="top-right">
-            <a href="#">LOGIN</a>
-            <span>CART: <i class="fas fa-shopping-cart"></i></span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Main Navigation -->
       <nav class="main-nav">
         <div class="container">
           <div class="nav-content">
-            <div class="logo">
+            <a class="logo" href="#">
               <img src="img/logo.png" alt="Flatsome Logo" />
-            </div>
+            </a>
             <ul class="menu">
               <li><a href="#" class="active">HOME</a></li>
               <li><a href="#">FEATURES</a></li>
@@ -52,9 +32,6 @@
               <i class="fas fa-search"></i>
               <i class="fas fa-heart"></i>
               <i class="fas fa-shopping-bag"></i>
-              <div class="mobile-menu">
-                <i class="fas fa-bars"></i>
-              </div>
             </div>
           </div>
         </div>
@@ -65,19 +42,10 @@
     <section class="hero" aria-label="Hero">
       <div class="hero-content">
         <h1>CHANGE THIS<br />TO ANYTHING</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipiscing elit, sed diam
-          nonumy eiusmod tempor incididunt ut labore et dolore magna.
-        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit, sed diam nonumy eiusmod tempor incididunt ut labore et dolore magna.</p>
         <div class="hero-buttons">
           <a href="#" class="btn-primary">SHOP MEN</a>
           <a href="#" class="btn-secondary">SHOP WOMEN</a>
-        </div>
-      </div>
-      <div class="hero-stats">
-        <div class="stat-item">
-          <div class="stat-number">2500</div>
-          <div class="stat-label">MEMBERS</div>
         </div>
       </div>
     </section>
@@ -86,29 +54,29 @@
     <section class="features-bar" aria-label="Info Banners">
       <h2 class="sr-only">Características</h2>
       <div class="container">
-        <div class="features-content">
-          <div class="feature-item">
+        <ul class="features-content">
+          <li class="feature-item">
             <i class="fas fa-shipping-fast"></i>
-            <div class="feature-text">
+            <p class="feature-text">
               <strong>Free Shipping all products</strong>
               <span>above $99</span>
-            </div>
-          </div>
-          <div class="feature-item">
+            </p>
+          </li>
+          <li class="feature-item">
             <i class="fas fa-plus-circle"></i>
-            <div class="feature-text">
+            <p class="feature-text">
               <strong>New products added</strong>
               <span>everyday</span>
-            </div>
-          </div>
-          <div class="feature-item">
+            </p>
+          </li>
+          <li class="feature-item">
             <i class="fas fa-sync-alt"></i>
-            <div class="feature-text">
+            <p class="feature-text">
               <strong>Free Shipping all products</strong>
               <span>above $99</span>
-            </div>
-          </div>
-        </div>
+            </p>
+          </li>
+        </ul>
       </div>
     </section>
 
@@ -121,101 +89,52 @@
           <ul class="product-grid">
             <li>
               <article class="product-card">
-                <div class="product-image">
+                <figure class="product-image">
                   <img src="img/girl.jpeg" alt="On1 Jersey UNIF-2" />
-                  <div class="product-overlay">
-                    <i class="fas fa-heart"></i>
-                    <i class="fas fa-search"></i>
-                    <i class="fas fa-shopping-cart"></i>
-                  </div>
-                </div>
+                </figure>
                 <div class="product-info">
                   <span class="product-category">SWEATERS</span>
                   <h3 class="product-name">On1 Jersey UNIF-2</h3>
-                  <div class="product-rating">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                  </div>
+                  <span class="product-rating">★★★★★</span>
                   <span class="product-price">$39.00</span>
                 </div>
               </article>
             </li>
             <li>
               <article class="product-card">
-                <div class="product-image">
+                <figure class="product-image">
                   <img src="img/dude.jpeg" alt="Osaka Entry Tee Superfry 12" />
-                  <div class="product-overlay">
-                    <i class="fas fa-heart"></i>
-                    <i class="fas fa-search"></i>
-                    <i class="fas fa-shopping-cart"></i>
-                  </div>
-                </div>
+                </figure>
                 <div class="product-info">
                   <span class="product-category">MEN</span>
                   <h3 class="product-name">Osaka Entry Tee Superfry 12</h3>
-                  <div class="product-rating">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                  </div>
+                  <span class="product-rating">★★★★★</span>
                   <span class="product-price">$29.00</span>
                 </div>
               </article>
             </li>
             <li>
               <article class="product-card">
-                <div class="product-image">
+                <figure class="product-image">
                   <img src="img/shoes.jpeg" alt="All Star Canvas Hi Converse" />
-                  <div class="product-overlay">
-                    <i class="fas fa-heart"></i>
-                    <i class="fas fa-search"></i>
-                    <i class="fas fa-shopping-cart"></i>
-                  </div>
-                </div>
+                </figure>
                 <div class="product-info">
                   <span class="product-category">SHOES</span>
                   <h3 class="product-name">All Star Canvas Hi Converse</h3>
-                  <div class="product-rating">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                  </div>
+                  <span class="product-rating">★★★★★</span>
                   <span class="product-price">$29.00</span>
                 </div>
               </article>
             </li>
             <li>
               <article class="product-card">
-                <div class="product-image">
-                  <img
-                    src="img/woman.jpeg"
-                    alt="Fluro Bis Pullover Designers Remix"
-                  />
-                  <div class="product-overlay">
-                    <i class="fas fa-heart"></i>
-                    <i class="fas fa-search"></i>
-                    <i class="fas fa-shopping-cart"></i>
-                  </div>
-                </div>
+                <figure class="product-image">
+                  <img src="img/woman.jpeg" alt="Fluro Bis Pullover Designers Remix" />
+                </figure>
                 <div class="product-info">
                   <span class="product-category">SWEATERS</span>
-                  <h3 class="product-name">
-                    Fluro Bis Pullover Designers Remix
-                  </h3>
-                  <div class="product-rating">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                  </div>
+                  <h3 class="product-name">Fluro Bis Pullover Designers Remix</h3>
+                  <span class="product-rating">★★★★★</span>
                   <span class="product-price">$49.00</span>
                 </div>
               </article>
@@ -232,41 +151,31 @@
             <li>
               <article class="browse-item">
                 <img src="img/hoodie.jpg" alt="Clothing" />
-                <div class="browse-overlay">
-                  <h3 class="browse-title">CLOTHING</h3>
-                </div>
+                <h3 class="browse-title">CLOTHING</h3>
               </article>
             </li>
             <li>
               <article class="browse-item">
                 <img src="img/earring-woman.jpg" alt="Women" />
-                <div class="browse-overlay">
-                  <h3 class="browse-title">WOMEN</h3>
-                </div>
+                <h3 class="browse-title">WOMEN</h3>
               </article>
             </li>
             <li>
               <article class="browse-item">
                 <img src="img/peace-sign.jpg" alt="Accessories" />
-                <div class="browse-overlay">
-                  <h3 class="browse-title">ACCESSORIES</h3>
-                </div>
+                <h3 class="browse-title">ACCESSORIES</h3>
               </article>
             </li>
             <li>
               <article class="browse-item">
                 <img src="img/dude.jpeg" alt="Men" />
-                <div class="browse-overlay">
-                  <h3 class="browse-title">MEN</h3>
-                </div>
+                <h3 class="browse-title">MEN</h3>
               </article>
             </li>
             <li>
               <article class="browse-item">
                 <img src="img/bag.jpeg" alt="Bags" />
-                <div class="browse-overlay">
-                  <h3 class="browse-title">BAGS</h3>
-                </div>
+                <h3 class="browse-title">BAGS</h3>
               </article>
             </li>
           </ul>
@@ -280,73 +189,61 @@
           <ul class="news-grid">
             <li>
               <article class="news-item">
-                <div class="news-image">
+                <figure class="news-image">
                   <img src="img/tablet.jpg" alt="News" />
-                  <div class="news-date">
+                  <figcaption class="news-date">
                     <span class="day">19</span>
                     <span class="month">Oct</span>
-                  </div>
-                </div>
+                  </figcaption>
+                </figure>
                 <div class="news-content">
                   <h3>WELCOME TO FLATSOME</h3>
-                  <p>
-                    Welcome to WordPress. This is your first post. Edit or
-                    delete it, then start blogging! [...]
-                  </p>
+                  <p>Welcome to WordPress. This is your first post. Edit or delete it, then start blogging! [...]</p>
                 </div>
               </article>
             </li>
             <li>
               <article class="news-item">
-                <div class="news-image">
+                <figure class="news-image">
                   <img src="img/dude.jpeg" alt="News" />
-                  <div class="news-date">
+                  <figcaption class="news-date">
                     <span class="day">13</span>
                     <span class="month">Oct</span>
-                  </div>
-                </div>
+                  </figcaption>
+                </figure>
                 <div class="news-content">
                   <h3>JUST ANOTHER POST WITH A GALLERY</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-                    sed vulputate massa. Fusce ante magna, [...]
-                  </p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sed vulputate massa. [...]</p>
                 </div>
               </article>
             </li>
             <li>
               <article class="news-item">
-                <div class="news-image">
+                <figure class="news-image">
                   <img src="img/chill.jpg" alt="News" />
-                  <div class="news-date">
+                  <figcaption class="news-date">
                     <span class="day">13</span>
                     <span class="month">Oct</span>
-                  </div>
-                </div>
+                  </figcaption>
+                </figure>
                 <div class="news-content">
                   <h3>A SIMPLE BLOG POST</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-                    sed diam nonummy nibh euismod tincidunt ut [...]
-                  </p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sed diam nonummy nibh. [...]</p>
                 </div>
               </article>
             </li>
             <li>
               <article class="news-item">
-                <div class="news-image">
+                <figure class="news-image">
                   <img src="img/sitting.jpg" alt="News" />
-                  <div class="news-date">
+                  <figcaption class="news-date">
                     <span class="day">01</span>
                     <span class="month">Jan</span>
-                  </div>
-                </div>
+                  </figcaption>
+                </figure>
                 <div class="news-content">
                   <h3>A VIDEO BLOG POST</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-                    sed vulputate massa. Fusce ante magna, [...]
-                  </p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sed vulputate massa. [...]</p>
                 </div>
               </article>
             </li>
@@ -358,21 +255,10 @@
       <section class="newsletter" aria-label="Newsletter Signup">
         <div class="container">
           <h2>SIGNUP FOR NEWSLETTER</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipiscing elit, sed diam
-            nonumy eiusmod tempor incididunt ut labore et dolore magna aliquyam
-            eiusmod.
-          </p>
+          <p>Lorem ipsum dolor sit amet consectetur adipiscing elit, sed diam nonumy eiusmod tempor incididunt ut labore et dolore magna aliquyam eiusmod.</p>
           <form class="newsletter-form">
-            <label for="newsletter-email" class="sr-only"
-              >Your Email Address</label
-            >
-            <input
-              type="email"
-              id="newsletter-email"
-              placeholder="Your Email Address..."
-              required
-            />
+            <label for="newsletter-email" class="sr-only">Your Email Address</label>
+            <input type="email" id="newsletter-email" placeholder="Your Email Address..." required />
             <button type="submit">SIGN UP</button>
           </form>
         </div>
@@ -385,97 +271,41 @@
           <li>
             <article class="gallery-item">
               <img src="img/beautiful.jpg" alt="Wave 1" />
-              <div class="gallery-overlay">
-                <div class="gallery-content">
-                  <span class="gallery-tag">LATEST</span>
-                  <h3>Girls Jersey Shirt-2</h3>
-                  <span class="gallery-price">$79.00</span>
-                </div>
-              </div>
             </article>
           </li>
           <li>
             <article class="gallery-item">
               <img src="img/lantern.jpg" alt="Wave 2" />
-              <div class="gallery-overlay">
-                <div class="gallery-content">
-                  <span class="gallery-tag">BEST SELLING</span>
-                  <h3>Osaka Blue Shirt By Hira Keelay 18</h3>
-                  <span class="gallery-price">$79.00</span>
-                </div>
-              </div>
             </article>
           </li>
           <li>
             <article class="gallery-item">
               <img src="img/lake.jpg" alt="Wave 3" />
-              <div class="gallery-overlay">
-                <div class="gallery-content">
-                  <span class="gallery-tag">FEATURED</span>
-                  <h3>Osaka Entry Tee Sleeves 18</h3>
-                  <span class="gallery-price">$35.00</span>
-                </div>
-              </div>
             </article>
           </li>
           <li>
             <article class="gallery-item">
               <img src="img/tree.jpg" alt="Wave 4" />
-              <div class="gallery-overlay">
-                <div class="gallery-content">
-                  <span class="gallery-tag">TOP RATED PRODUCTS</span>
-                  <h3>Surfing (SVT)</h3>
-                  <span class="gallery-price">$39.00 - $59.00</span>
-                </div>
-              </div>
             </article>
           </li>
           <li>
             <article class="gallery-item">
               <img src="img/boat-in-sea.jpg" alt="Wave 5" />
-              <div class="gallery-overlay">
-                <div class="gallery-content">
-                  <span class="gallery-tag">TOP RATED PRODUCTS</span>
-                  <h3>Surfing (SVT)</h3>
-                  <span class="gallery-price">$39.00</span>
-                </div>
-              </div>
             </article>
           </li>
           <li>
             <article class="gallery-item">
               <img src="img/cliff.jpg" alt="Wave 6" />
-              <div class="gallery-overlay">
-                <div class="gallery-content">
-                  <span class="gallery-tag">FEATURED</span>
-                  <h3>From The Jack & Jones</h3>
-                  <span class="gallery-price">$29.00</span>
-                </div>
-              </div>
             </article>
           </li>
           <li>
             <article class="gallery-item">
               <img src="img/cherry.jpg" alt="Wave 7" />
-              <div class="gallery-overlay">
-                <div class="gallery-content">
-                  <span class="gallery-tag">SALE</span>
-                  <h3>From The Jack & Jones</h3>
-                  <span class="gallery-price">$29.00</span>
-                </div>
-              </div>
             </article>
           </li>
           <li>
             <article class="gallery-item">
-              <img src="img/chill.jpg" alt="Wave 7" />
-              <div class="gallery-overlay">
-                <div class="gallery-content">
-                  <span class="gallery-tag">SALE</span>
-                  <h3>From The Jack & Jones</h3>
-                  <span class="gallery-price">$29.00</span>
-                </div>
-              </div>
+              <img src="img/chill.jpg" alt="Wave 8" />
             </article>
           </li>
         </ul>
@@ -492,35 +322,35 @@
             <ul class="product-list">
               <li class="product-item">
                 <img src="img/shirt-man.jpeg" alt="On1 Jersey UNIF-2" />
-                <div class="product-info">
-                  <h3>On1 Jersey UNIF-2</h3>
-                  <div class="stars">★★★★★</div>
+                <p class="product-info">
+                  <strong>On1 Jersey UNIF-2</strong>
+                  <span class="stars">★★★★★</span>
                   <span class="price">$39,00</span>
-                </div>
+                </p>
               </li>
               <li class="product-item">
                 <img src="img/hoodie.jpg" alt="Osaka Entry Tee Superdry 12" />
-                <div class="product-info">
-                  <h3>Osaka Entry Tee Superdry 12</h3>
-                  <div class="stars">★★★★★</div>
+                <p class="product-info">
+                  <strong>Osaka Entry Tee Superdry 12</strong>
+                  <span class="stars">★★★★★</span>
                   <span class="price">$29,00</span>
-                </div>
+                </p>
               </li>
               <li class="product-item">
                 <img src="img/shoes.jpeg" alt="All Star Canvas Hi Converse" />
-                <div class="product-info">
-                  <h3>All Star Canvas Hi Converse</h3>
-                  <div class="stars">★★★★★</div>
+                <p class="product-info">
+                  <strong>All Star Canvas Hi Converse</strong>
+                  <span class="stars">★★★★★</span>
                   <span class="price">$29,00</span>
-                </div>
+                </p>
               </li>
               <li class="product-item">
-                <img src="img/dude.jpeg" alt="Fluro Big Pullover Designers Remix" />
-                <div class="product-info">
-                  <h3>Fluro Big Pullover Designers Remix</h3>
-                  <div class="stars">★★★★★</div>
+                <img src="img/dude.jpeg" alt="Fluro Big Pullover" />
+                <p class="product-info">
+                  <strong>Fluro Big Pullover Designers Remix</strong>
+                  <span class="stars">★★★★★</span>
                   <span class="price">$49,00</span>
-                </div>
+                </p>
               </li>
             </ul>
           </div>
@@ -531,35 +361,35 @@
             <ul class="product-list">
               <li class="product-item">
                 <img src="img/hoodie.jpg" alt="Osaka Entry Tee Superdry 12" />
-                <div class="product-info">
-                  <h3>Osaka Entry Tee Superdry 12</h3>
-                  <div class="stars">★★★★★</div>
+                <p class="product-info">
+                  <strong>Osaka Entry Tee Superdry 12</strong>
+                  <span class="stars">★★★★★</span>
                   <span class="price">$29,00</span>
-                </div>
+                </p>
               </li>
               <li class="product-item">
-                <img src="img/bag.jpeg" alt="Daisy Bag Sonia by Sonia Rykiel" />
-                <div class="product-info">
-                  <h3>Daisy Bag Sonia by Sonia Rykiel</h3>
-                  <div class="stars">★★★★★</div>
+                <img src="img/bag.jpeg" alt="Daisy Bag Sonia" />
+                <p class="product-info">
+                  <strong>Daisy Bag Sonia by Sonia Rykiel</strong>
+                  <span class="stars">★★★★★</span>
                   <span class="price">$2.999,00</span>
-                </div>
+                </p>
               </li>
               <li class="product-item">
                 <img src="img/shirt-man.jpeg" alt="On1 Jersey UNIF" />
-                <div class="product-info">
-                  <h3>On1 Jersey UNIF</h3>
-                  <div class="stars">★★★★★</div>
+                <p class="product-info">
+                  <strong>On1 Jersey UNIF</strong>
+                  <span class="stars">★★★★★</span>
                   <span class="price">$39,00</span>
-                </div>
+                </p>
               </li>
               <li class="product-item">
                 <img src="img/shirt-girl.jpeg" alt="Happy Ninja" />
-                <div class="product-info">
-                  <h3>Happy Ninja</h3>
-                  <div class="stars">★★★★★</div>
+                <p class="product-info">
+                  <strong>Happy Ninja</strong>
+                  <span class="stars">★★★★★</span>
                   <span class="price">$18,00</span>
-                </div>
+                </p>
               </li>
             </ul>
           </div>
@@ -570,36 +400,36 @@
             <ul class="product-list">
               <li class="product-item">
                 <img src="img/hoodie.jpg" alt="Osaka Entry Tee Superdry 12" />
-                <div class="product-info">
-                  <h3>Osaka Entry Tee Superdry 12</h3>
-                  <div class="stars">★★★★★</div>
+                <p class="product-info">
+                  <strong>Osaka Entry Tee Superdry 12</strong>
+                  <span class="stars">★★★★★</span>
                   <span class="price">$29,00</span>
-                </div>
+                </p>
               </li>
               <li class="product-item">
                 <img src="img/shoes.jpeg" alt="All Star Canvas Hi Converse" />
-                <div class="product-info">
-                  <h3>All Star Canvas Hi Converse</h3>
-                  <div class="stars">★★★★★</div>
+                <p class="product-info">
+                  <strong>All Star Canvas Hi Converse</strong>
+                  <span class="stars">★★★★★</span>
                   <span class="price">$29,00</span>
-                </div>
+                </p>
               </li>
               <li class="product-item">
-                <img src="img/dude.jpeg" alt="Fluro Big Pullover Designers Remix" />
-                <div class="product-info">
-                  <h3>Fluro Big Pullover Designers Remix</h3>
-                  <div class="stars">★★★★★</div>
+                <img src="img/dude.jpeg" alt="Fluro Big Pullover" />
+                <p class="product-info">
+                  <strong>Fluro Big Pullover Designers Remix</strong>
+                  <span class="stars">★★★★★</span>
                   <span class="price">$49,00</span>
-                </div>
+                </p>
               </li>
               <li class="product-item">
-                <img src="img/girl.jpeg" alt="Varanise CN Tee Hilfiger Denim" />
-                <div class="product-info">
-                  <h3>Varanise CN Tee Hilfiger Denim</h3>
-                  <div class="stars">★★★★★</div>
+                <img src="img/girl.jpeg" alt="Varanise CN Tee" />
+                <p class="product-info">
+                  <strong>Varanise CN Tee Hilfiger Denim</strong>
+                  <span class="stars">★★★★★</span>
                   <span class="price-old">$19,00</span>
                   <span class="price">$15,00</span>
-                </div>
+                </p>
               </li>
             </ul>
           </div>
@@ -610,27 +440,27 @@
             <ul class="product-list">
               <li class="product-item">
                 <img src="img/bag.jpeg" alt="Classic Bag, Svea" />
-                <div class="product-info">
-                  <h3>Classic Bag, Svea</h3>
-                  <div class="stars">★★★★★</div>
+                <p class="product-info">
+                  <strong>Classic Bag, Svea</strong>
+                  <span class="stars">★★★★★</span>
                   <span class="price">$29,00</span>
-                </div>
+                </p>
               </li>
               <li class="product-item">
                 <img src="img/lantern.jpg" alt="Weekend Wine Course" />
-                <div class="product-info">
-                  <h3>Weekend Wine Course</h3>
-                  <div class="stars">★★★★★</div>
+                <p class="product-info">
+                  <strong>Weekend Wine Course</strong>
+                  <span class="stars">★★★★★</span>
                   <span class="price">$399,00</span>
-                </div>
+                </p>
               </li>
               <li class="product-item">
                 <img src="img/woman.jpeg" alt="Woo Ninja" />
-                <div class="product-info">
-                  <h3>Woo Ninja</h3>
-                  <div class="stars">★★★★★</div>
+                <p class="product-info">
+                  <strong>Woo Ninja</strong>
+                  <span class="stars">★★★★★</span>
                   <span class="price">$15,00</span>
-                </div>
+                </p>
               </li>
             </ul>
           </div>
@@ -642,93 +472,71 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-content">
-          <!-- About Us Section -->
+          <!-- About Us -->
           <section class="footer-section" aria-label="About Us">
             <h2>ABOUT US</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim
-              ad minim veniam, quis nostrud exercitation ullamco laboris.
-            </p>
-            <div class="social-icons">
-              <i class="fab fa-facebook"></i>
-              <i class="fab fa-twitter"></i>
-              <i class="fab fa-instagram"></i>
-              <i class="fab fa-youtube"></i>
-            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+            <ul class="social-icons">
+              <li><i class="fab fa-facebook"></i></li>
+              <li><i class="fab fa-twitter"></i></li>
+              <li><i class="fab fa-instagram"></i></li>
+              <li><i class="fab fa-youtube"></i></li>
+            </ul>
           </section>
 
-          <!-- Latest News Section -->
+          <!-- Latest News -->
           <section class="footer-section" aria-label="Latest News">
             <h2>LATEST NEWS</h2>
             <ul class="footer-news">
               <li class="footer-news-item">
                 <span class="news-number">01</span>
-                <div>
-                  <h3>Welcome to Flatsome!</h3>
-                  <p>15 January 2021</p>
-                </div>
+                <p><strong>Welcome to Flatsome!</strong><span>15 January 2021</span></p>
               </li>
               <li class="footer-news-item">
                 <span class="news-number">02</span>
-                <div>
-                  <h3>Just another post with A</h3>
-                  <p>14 January 2021</p>
-                </div>
+                <p><strong>Just another post with A</strong><span>14 January 2021</span></p>
               </li>
               <li class="footer-news-item">
                 <span class="news-number">03</span>
-                <div>
-                  <h3>A Simple Blog Post</h3>
-                  <p>13 January 2021</p>
-                </div>
+                <p><strong>A Simple Blog Post</strong><span>13 January 2021</span></p>
               </li>
               <li class="footer-news-item">
                 <span class="news-number">04</span>
-                <div>
-                  <h3>A Video Blog Post</h3>
-                  <p>12 January 2021</p>
-                </div>
+                <p><strong>A Video Blog Post</strong><span>12 January 2021</span></p>
               </li>
             </ul>
           </section>
 
-          <!-- Tags Section -->
+          <!-- Tags -->
           <section class="footer-section" aria-label="Tags">
             <h2>TAGS</h2>
-            <div class="tag-cloud">
-              <span class="tag">blog</span>
-              <span class="tag">classic</span>
-              <span class="tag">clean</span>
-              <span class="tag">creative</span>
-              <span class="tag">css</span>
-              <span class="tag">fullscreen</span>
-              <span class="tag">html</span>
-              <span class="tag">html5</span>
-              <span class="tag">minimal</span>
-              <span class="tag">modern</span>
-              <span class="tag">multipurpose</span>
-              <span class="tag">page</span>
-              <span class="tag">responsive</span>
-              <span class="tag">shop</span>
-              <span class="tag">theme</span>
-              <span class="tag">woocommerce</span>
-            </div>
+            <ul class="tag-cloud">
+              <li class="tag">blog</li>
+              <li class="tag">classic</li>
+              <li class="tag">clean</li>
+              <li class="tag">creative</li>
+              <li class="tag">css</li>
+              <li class="tag">fullscreen</li>
+              <li class="tag">html</li>
+              <li class="tag">html5</li>
+              <li class="tag">minimal</li>
+              <li class="tag">modern</li>
+              <li class="tag">multipurpose</li>
+              <li class="tag">page</li>
+              <li class="tag">responsive</li>
+              <li class="tag">shop</li>
+              <li class="tag">theme</li>
+              <li class="tag">woocommerce</li>
+            </ul>
           </section>
 
-          <!-- Newsletter Section -->
+          <!-- Newsletter -->
           <section class="footer-section" aria-label="Newsletter Signup">
             <h2>SIGNUP FOR NEWSLETTER</h2>
             <p>Signup to get news about Flatsome & WooThemes. We don't spam.</p>
             <form class="footer-newsletter">
-              <label for="footer-email" class="sr-only"
-                >Your Email Address</label
-              >
-              <input
-                type="email"
-                id="footer-email"
-                placeholder="Your Email Address..."
-                required
-              />
+              <label for="footer-email" class="sr-only">Your Email Address</label>
+              <input type="email" id="footer-email" placeholder="Your Email Address..." required />
               <button type="submit">SIGN UP</button>
             </form>
           </section>
@@ -739,13 +547,13 @@
       <div class="footer-bottom">
         <div class="container">
           <div class="footer-bottom-content">
-            <div class="payment-methods">
+            <p class="payment-methods">
               <span>VISA</span>
               <span>PayPal</span>
               <span>stripe</span>
               <span class="mastercard">●●</span>
               <span>CASH ON DELIVERY</span>
-            </div>
+            </p>
             <nav class="footer-nav">
               <a href="#">ABOUT</a>
               <a href="#">OUR STORES</a>
