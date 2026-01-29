@@ -65,8 +65,9 @@ body {
 
 .nav-content {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start; /* logo + menu alineados a la izquierda */
   align-items: center;
+  gap: 20px;
 }
 
 .logo img {
@@ -98,6 +99,20 @@ body {
   font-size: 16px;
   color: var(--white);
   align-items: center;
+  margin-left: auto; /* llevar los iconos al extremo derecho */
+}
+
+.nav-icons .login {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  padding-right: 6px;
+}
+
+.nav-icons .cart i {
+  font-size: 18px;
 }
 
 /* Checkbox oculto para menú móvil */
@@ -122,12 +137,14 @@ body {
   background: url("../img/surfing-3.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
+  justify-content: center; /* centrar horizontalmente el contenido del hero */
   padding: 0 100px;
   color: var(--white);
 }
 
 .hero-content {
   max-width: 600px;
+  text-align: center; /* centrar texto dentro del hero */
 
   & h1 {
     font-size: 4rem;

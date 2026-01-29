@@ -20,13 +20,16 @@
   <body>
     <!-- Header -->
     <header class="header">
-      <nav class="main-nav">
-        <section class="container">
-          <section class="nav-content">
-            <a class="logo" href="#">
+      <div class="container">
+        <nav class="main-nav" role="navigation" aria-label="Main navigation">
+          <div class="nav-content">
+            <a class="logo" href="#" aria-label="Flatsome">
               <img src="img/logo.png" alt="Flatsome Logo" />
             </a>
+
+            <!-- checkbox para controlar el menú móvil; debe ir antes de la lista -->
             <input type="checkbox" id="menu-toggle" class="menu-checkbox" />
+
             <ul class="menu">
               <li><a href="#" class="active">HOME</a></li>
               <li><a href="#">FEATURES</a></li>
@@ -35,17 +38,19 @@
               <li><a href="#">BLOG</a></li>
               <li><a href="#">ELEMENTS</a></li>
             </ul>
-            <aside class="nav-icons">
-              <i class="fas fa-search"></i>
-              <i class="fas fa-heart"></i>
-              <i class="fas fa-shopping-bag"></i>
+
+            <div class="nav-icons">
+              <a href="#" class="login">LOGIN</a>
+              <i class="fas fa-search" aria-hidden="true"></i>
+              <i class="fas fa-heart" aria-hidden="true"></i>
+              <a href="#" class="cart" aria-label="Ver carrito"><i class="fas fa-shopping-bag"></i></a>
               <label for="menu-toggle" class="menu-toggle" aria-label="Abrir menú">
-                <i class="fas fa-bars"></i>
+                <i class="fas fa-bars" aria-hidden="true"></i>
               </label>
-            </aside>
-          </section>
-        </section>
-      </nav>
+            </div>
+          </div>
+        </nav>
+      </div>
     </header>
 
     <!-- Hero Section -->
