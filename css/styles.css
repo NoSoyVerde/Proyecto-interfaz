@@ -47,7 +47,7 @@ body {
    HEADER
    ======================================== */
 .header {
-  position: fixed;
+  position: absolute; /* se superpone al hero, pero no queda fija al viewport */
   top: 0;
   left: 0;
   right: 0;
@@ -60,7 +60,7 @@ body {
 }
 
 .main-nav {
-  padding: 20px 0;
+  padding: 10px 0; /* reducir altura del navbar para apariencia compacta */
 }
 
 .nav-content {
@@ -68,6 +68,52 @@ body {
   justify-content: flex-start; /* logo + menu alineados a la izquierda */
   align-items: center;
   gap: 20px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.18); /* fondo semitransparente sobre hero */
+  padding: 6px 12px;
+  border-radius: 6px;
+}
+
+.logo {
+  display: inline-block;
+  margin-right: 12px;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  gap: 22px;
+  margin: 0; /* evitar centrados por margen */
+  padding: 0;
+}
+
+.nav-icons {
+  display: flex;
+  gap: 18px;
+  font-size: 16px;
+  color: var(--white);
+  align-items: center;
+  margin-left: auto; /* llevar los iconos al extremo derecho */
+}
+
+/* Asegurar visibilidad de LOGIN y del icono del carrito */
+.nav-icons .login {
+  color: var(--white) !important;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  padding-right: 6px;
+  display: inline-block;
+}
+
+.nav-icons .cart {
+  color: var(--white);
+  display: inline-block;
+}
+
+.nav-icons .cart i {
+  font-size: 18px;
 }
 
 .logo img {
@@ -78,19 +124,34 @@ body {
   display: flex;
   list-style: none;
   gap: 35px;
+}
 
-  & a {
-    text-decoration: none;
-    color: var(--white);
-    font-weight: 500;
-    font-size: 13px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+/* enlaces del menú */
+.menu a {
+  text-decoration: none;
+  color: var(--white);
+  font-weight: 500;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 6px 0; /* reduce vertical padding for compact look */
+  text-shadow: 0 1px 0 rgba(0,0,0,0.3); /* mejorar contraste sobre hero */
+  opacity: 0.95;
+  position: relative;
+}
 
-    &.active {
-      color: var(--primary);
-    }
-  }
+/* añadir un pequeño indicador de dropdown (flecha) similar al diseño */
+.menu a::after {
+  content: none; /* ocultar indicador por diseño solicitado */
+}
+
+.menu a.active {
+  color: var(--primary);
+}
+
+.menu a:hover {
+  color: var(--primary);
 }
 
 .nav-icons {
@@ -138,28 +199,29 @@ body {
   display: flex;
   align-items: center;
   justify-content: center; /* centrar horizontalmente el contenido del hero */
-  padding: 0 100px;
+  padding: 0; /* usar .container para el espaciado horizontal */
   color: var(--white);
 }
 
 .hero-content {
   max-width: 600px;
   text-align: center; /* centrar texto dentro del hero */
+}
 
-  & h1 {
-    font-size: 4rem;
-    font-weight: 300;
-    line-height: 1.1;
-    margin-bottom: 25px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-  }
+/* selector válido para el h1 y p dentro del hero */
+.hero-content h1 {
+  font-size: 4rem;
+  font-weight: 300;
+  line-height: 1.1;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
 
-  & p {
-    font-size: 16px;
-    margin-bottom: 40px;
-    opacity: 0.9;
-  }
+.hero-content p {
+  font-size: 16px;
+  margin-bottom: 40px;
+  opacity: 0.9;
 }
 
 .hero-buttons {
@@ -780,11 +842,10 @@ body {
 
   /* HERO */
   .hero {
-    padding: 0 50px;
-
-    & h1 {
-      font-size: 3rem;
-    }
+    padding: 0; /* no duplicar espaciado: .container alinea el contenido */
+  }
+  .hero-content h1 {
+    font-size: 3rem;
   }
 
   /* FEATURES BAR */
@@ -893,14 +954,16 @@ body {
     padding: 20px;
     gap: 0;
 
-    & li {
-      border-bottom: 1px solid var(--border);
-    }
+  }
 
-    & a {
-      display: block;
-      padding: 15px 0;
-    }
+  /* items y enlaces del menú móvil */
+  .menu li {
+    border-bottom: 1px solid var(--border);
+  }
+
+  .menu a {
+    display: block;
+    padding: 15px 0;
   }
 
   /* Mostrar menú cuando checkbox está marcado */
@@ -927,23 +990,23 @@ body {
 
   /* HERO */
   .hero {
-    padding: 0 20px;
+    padding: 0; /* usar .container */
     text-align: center;
     justify-content: center;
   }
 
   .hero-content {
     max-width: 100%;
+  }
 
-    & h1 {
-      font-size: 2rem;
-      margin-bottom: 20px;
-    }
+  .hero-content h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
 
-    & p {
-      font-size: 14px;
-      margin-bottom: 30px;
-    }
+  .hero-content p {
+    font-size: 14px;
+    margin-bottom: 30px;
   }
 
   .hero-buttons {
