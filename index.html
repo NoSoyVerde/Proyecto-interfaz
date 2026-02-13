@@ -29,11 +29,12 @@
               </svg>
               <span class="logo-text">FLATSOME</span>
             </a>
-            <form class="search-form">
-              <button type="submit" class="nav-search">
+            <!-- Search is a simple control: not submitting anywhere in this static demo -->
+            <div class="search-form" aria-hidden="true">
+              <button type="button" class="nav-search">
                 <i class="fas fa-search"></i>
               </button>
-            </form>
+            </div>
             <!-- checkbox para controlar el menú móvil -->
             <input type="checkbox" id="menu-toggle" class="menu-checkbox" />
             <ul class="menu" id="main-menu">
@@ -43,6 +44,9 @@
               <li><a href="#">PAGES <i class="fas fa-chevron-down"></i></a></li>
               <li><a href="#">BLOG</a></li>
               <li><a href="#">ELEMENTS</a></li>
+              <!-- Mobile-only quick links for login/cart (keeps header uncluttered on desktop) -->
+              <li class="mobile-only"><a href="#" class="login">LOGIN</a></li>
+              <li class="mobile-only"><a href="#" class="cart-link">CART / $0.00 <span class="cart-count">0</span></a></li>
             </ul>
           </div>
 
@@ -96,7 +100,7 @@
 
     <!-- Features Bar -->
     <section class="features-bar">
-      <h2 class="sr-only">Características</h2>
+          <h2>Características</h2>
       <div class="container">
         <ul class="features-content">
           <li>
@@ -297,7 +301,7 @@
 
       <!-- Bottom Gallery -->
       <section class="bottom-gallery">
-        <h2 class="sr-only">Product Gallery</h2>
+    <h2 class="sr-only">Product Gallery</h2>
         <ul class="gallery-grid">
           <li>
             <a href="#">
@@ -354,29 +358,37 @@
               <li>
                 <a href="#">
                   <img src="img/girl.jpeg" alt="On1 Jersey UNIF-2" />
-                  <span>On1 Jersey UNIF-2</span>
-                  <span class="price">$39,00</span>
+                  <div class="meta">
+                    <span class="product-name">On1 Jersey UNIF-2</span>
+                    <span class="price">$39,00</span>
+                  </div>
                 </a>
               </li>
               <li>
                 <a href="#">
                   <img src="img/dude.jpeg" alt="Osaka Entry Tee Superdry 12" />
-                  <span>Osaka Entry Tee Superdry 12</span>
-                  <span class="price">$29,00</span>
+                  <div class="meta">
+                    <span class="product-name">Osaka Entry Tee Superdry 12</span>
+                    <span class="price">$29,00</span>
+                  </div>
                 </a>
               </li>
               <li>
                 <a href="#">
                   <img src="img/shoes.jpeg" alt="All Star Canvas Hi Converse" />
-                  <span>All Star Canvas Hi Converse</span>
-                  <span class="price">$29,00</span>
+                  <div class="meta">
+                    <span class="product-name">All Star Canvas Hi Converse</span>
+                    <span class="price">$29,00</span>
+                  </div>
                 </a>
               </li>
               <li>
                 <a href="#">
                   <img src="img/woman.jpeg" alt="Fluro Big Pullover Designers Remix" />
-                  <span>Fluro Big Pullover Designers Remix</span>
-                  <span class="price">$49,00</span>
+                  <div class="meta">
+                    <span class="product-name">Fluro Big Pullover Designers Remix</span>
+                    <span class="price">$49,00</span>
+                  </div>
                 </a>
               </li>
             </ul>
@@ -389,29 +401,37 @@
               <li>
                 <a href="#">
                   <img src="img/bag.jpeg" alt="Daisy Bag Sonia by Sonia Rykiel" />
-                  <span>Daisy Bag Sonia by Sonia Rykiel</span>
-                  <span class="price">$2.999,00</span>
+                  <div class="meta">
+                    <span class="product-name">Daisy Bag Sonia by Sonia Rykiel</span>
+                    <span class="price">$2.999,00</span>
+                  </div>
                 </a>
               </li>
               <li>
                 <a href="#">
                   <img src="img/girl.jpeg" alt="On1 Jersey UNIF" />
-                  <span>On1 Jersey UNIF</span>
-                  <span class="price">$39,00</span>
+                  <div class="meta">
+                    <span class="product-name">On1 Jersey UNIF</span>
+                    <span class="price">$39,00</span>
+                  </div>
                 </a>
               </li>
               <li>
                 <a href="#">
                   <img src="img/shirt-girl.jpeg" alt="Beyond Top NLY Trend" />
-                  <span>Beyond Top NLY Trend</span>
-                  <span class="price">$9,90</span>
+                  <div class="meta">
+                    <span class="product-name">Beyond Top NLY Trend</span>
+                    <span class="price">$9,90</span>
+                  </div>
                 </a>
               </li>
               <li>
                 <a href="#">
                   <img src="img/hoodie.jpg" alt="Harissa O-Neck Sweat" />
-                  <span>Harissa O-Neck Sweat</span>
-                  <span class="price">$101,00</span>
+                  <div class="meta">
+                    <span class="product-name">Harissa O-Neck Sweat</span>
+                    <span class="price">$101,00</span>
+                  </div>
                 </a>
               </li>
             </ul>
@@ -424,58 +444,91 @@
               <li>
                 <a href="#">
                   <img src="img/dude.jpeg" alt="Osaka Entry Tee Superdry 12" />
-                  <span>Osaka Entry Tee Superdry 12</span>
-                  <span class="price">$29,00</span>
+                  <div class="meta">
+                    <span class="product-name">Osaka Entry Tee Superdry 12</span>
+                    <span class="price">$29,00</span>
+                  </div>
                 </a>
               </li>
               <li>
                 <a href="#">
                   <img src="img/shoes.jpeg" alt="All Star Canvas Hi Converse" />
-                  <span>All Star Canvas Hi Converse</span>
-                  <span class="price">$29,00</span>
+                  <div class="meta">
+                    <span class="product-name">All Star Canvas Hi Converse</span>
+                    <span class="price">$29,00</span>
+                  </div>
                 </a>
               </li>
               <li>
                 <a href="#">
                   <img src="img/woman.jpeg" alt="Fluro Big Pullover Designers Remix" />
-                  <span>Fluro Big Pullover Designers Remix</span>
-                  <span class="price">$49,00</span>
+                  <div class="meta">
+                    <span class="product-name">Fluro Big Pullover Designers Remix</span>
+                    <span class="price">$49,00</span>
+                  </div>
                 </a>
               </li>
               <li>
                 <a href="#">
                   <img src="img/shirt-man.jpeg" alt="Varanise CN Tee Hilfiger Denim" />
-                  <span>Varanise CN Tee Hilfiger Denim</span>
-                  <span class="price-old">$19,00</span>
-                  <span class="price">$15,00</span>
+                  <div class="meta">
+                    <span class="product-name">Varanise CN Tee Hilfiger Denim</span>
+                    <span class="price-old">$19,00</span>
+                    <span class="price">$15,00</span>
+                  </div>
                 </a>
               </li>
             </ul>
           </section>
 
           <!-- Top Rated Products -->
-          <section>
+          <section class="top-rated">
             <h2>TOP RATED PRODUCTS</h2>
             <ul>
               <li>
                 <a href="#">
                   <img src="img/bag.jpeg" alt="Talifa Bag, NYPD" />
-                  <span>Talifa Bag , NYPD</span>
-                  <span class="price">$69,00</span>
+                  <div class="meta">
+                    <span class="product-name">Talifa Bag , NYPD</span>
+                    <span class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </span>
+                    <span class="price">$69,00</span>
+                  </div>
                 </a>
               </li>
               <li>
                 <a href="#">
                   <img src="img/bag.jpeg" alt="Adelia Bag, NYPD" />
-                  <span>Adelia Bag, NYPD</span>
-                  <span class="price">$29,00</span>
+                  <div class="meta">
+                    <span class="product-name">Adelia Bag, NYPD</span>
+                    <span class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </span>
+                  </div>
                 </a>
               </li>
               <li>
                 <a href="#">
                   <img src="img/shirt-man.jpeg" alt="Land Tee Jack & Jones" />
-                  <span>Land Tee Jack & Jones</span>
-                  <span class="price">$15,00</span>
+                  <div class="meta">
+                    <span class="product-name">Land Tee Jack & Jones</span>
+                    <span class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half-alt"></i>
+                    </span>
+                  </div>
                 </a>
               </li>
             </ul>
