@@ -103,6 +103,11 @@ body {
 /* ensure logo and nav-left stay left-aligned */
 .main-nav { padding: 0 5px; }
 
+/* Logo placed under the navigation (alternative prominent placement) */
+.logo-in-media { display:flex; justify-content:flex-start; align-items:center; margin-bottom:12px; }
+.logo-media { width:120px; height:auto; display:block; border-radius:8px; box-shadow: 0 8px 22px rgba(0,0,0,0.45); }
+.header .logo-img { width:28px; height:auto; display:block; }
+
 /* ========================================
    HERO
    ======================================== */
