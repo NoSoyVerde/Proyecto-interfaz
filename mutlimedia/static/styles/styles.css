@@ -764,3 +764,8 @@ main section h2::after {
   .youtube-embed iframe.youtube-iframe { height:190px; }
   .media-feature-side { align-items:center; text-align:center; }
 }
+
+/* Reglas específicas para la página raíz (index.html en la carpeta raíz) */
+.root-page { padding: 2rem; }
+.root-page .links { display:flex; gap:1rem; flex-direction:column; max-width:480px; }
+.root-page .links a { color: var(--primary, #0366d6); text-decoration: none; }
